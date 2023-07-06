@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProfileActivity">
+    <RelativeLayout
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/ivBackButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="14dp"
+            android:src="@drawable/back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Profile"
+            android:textColor="#FF3434"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/profile_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/profile"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_title"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/profile_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_bg"
+        android:hint="Iqbal Ramadhan"
+        android:padding="13dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_img"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/profile_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="iqbalramadhan@gmail.com"
+        android:layout_marginTop="10dp"
+        android:padding="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_number"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/profile_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@drawable/telephone"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="087756780432"
+        android:layout_marginTop="10dp"
+        android:padding="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_address"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/profile_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@drawable/location"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="Bantarjati, Jawa Barat"
+        android:padding="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name"
+        app:layout_constraintVertical_bias="0.025"
+        app:layout_constraintWidth_percent=".8" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
